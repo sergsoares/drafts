@@ -8,7 +8,9 @@ help:
 show: 
 	find * -name description.md | fzf --preview 'cat {}'
 
-# Create a new project
+# Create a new project (formatting spaces to hifen)
 new:
-	@read -p "What is the project name: " project; \
-	mkdir $$project && cd $$project && touch Makefile && touch description.md
+	@read -p "What is the project name: " input; \
+	project=`echo $$input | sed -e 's/\s$$//g'  | tr ' ' '-' ` ; \
+	mkdir $$project && cd $$project && touch Makefile && touch description.md; \
+	echo "$$project created, enter with $ cd $$project"
