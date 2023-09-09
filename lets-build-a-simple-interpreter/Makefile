@@ -19,3 +19,6 @@ calc3:
 calc3-copy:
 	@python3 'calc3 copy.py'
 	
+calc4-copy:
+	@python3 'calc4 copy.py'
+	
