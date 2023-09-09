@@ -7,3 +7,9 @@ help:
 # Execute first exercise
 calc1:
 	@python3 calc1.py
+
+calc2:
+	@python3 calc2.py
+
+calc3:
+	@python3 calc3.py
