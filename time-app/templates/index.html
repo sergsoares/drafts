@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Time</title>
+    <meta http-equiv="refresh" content="1" />
+		<style>
+
+    body {
+      background-color: black;
+    }
+
+		.clock {
+			font-family: verdana, sans-serif;
+      color: white;
+      font-weight: bold;
+			margin: 0px; /* Reset margin */
+		}
+
+    .debug {
+      outline: dashed 1px black;
+    }
+
+		.popup { 
+			position: fixed;
+			top: 50%;
+			left: 50%;
+      font-size: calc(10 * (1.0vh + 1.0vw));
+			transform: translate(-50%, -50%);
+		}
+		</style>
+
+  </head>
+  <body>
+	
+	<div class="popup"> 
+		<p class="clock">{{.}}</p>
+	</div>
+	</body>
+	</html>
