@@ -1,0 +1,46 @@
+version: '3.5'
+services: 
+  db:
+    image: postgres
+    restart: always
+    network_mode: "host"
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+
+  rabbitmq:
+    image: rabbitmq
+    restart: always
+    ports:
+      # "amqp://myuser:mypassword@localhost:5672"
+      # AMQP protocol port
+      - "5672:5672"
+      # HTTP management UI
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: myuser
+      RABBITMQ_DEFAULT_PASS: mypassword
+
+  api:
+      build:
+        dockerfile: ./Dockerfile
+        context: .
+      container_name: api
+      command: -mode=api
+      ports:
+        - "8080"
+      environment:
+        - AMQP_SERVER_URL="amqp://myuser:mypassword@rabbitmq:5672"
+      
+
+  worker:
+      build:
+        dockerfile: ./Dockerfile
+        context: .
+      command: -mode=worker
+      container_name: worker
+      environment:
+        - AMQP_SERVER_URL="amqp://myuser:mypassword@rabbitmq:5672"
+
+  

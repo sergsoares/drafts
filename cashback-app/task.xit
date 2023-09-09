@@ -1,0 +1,9 @@
+Tasks
+[x] Create basic logic for api
+[x] Create basic logic for worker
+[x] Create basic logic for migrations
+[x] Improve makefile with steps to initialize dbs and execute api and workers
+[x] Fix migration for transfer
+[x] Fix transfer persistence with worker
+[x] Fix docker compose to work with multiples apps
+[x] Fix contract between sender and receiver messages
