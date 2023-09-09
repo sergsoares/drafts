@@ -11,6 +11,6 @@ show:
 # Create a new project (formatting spaces to hifen)
 new:
 	@read -p "What is the project name: " input; \
-	project=`echo $$input | sed -e 's/\s$$//g'  | tr ' ' '-' ` ; \
+	project=`echo $$input | sed -e 's/\s$$//g' | tr ' ' '-' | tr '[:upper:]' '[:lower:]' ` ; \
 	mkdir $$project && cd $$project && touch Makefile && touch description.md; \
 	echo "$$project created, enter with $ cd $$project"
