@@ -21,4 +21,7 @@ calc3-copy:
 	
 calc4-copy:
 	@python3 'calc4 copy.py'
-	
+
+
+calc5-my-try:
+	@python3 'calc5-my-try.py'
