@@ -1,3 +1,5 @@
+create-new-api:
+		@dotnet new web --no-https -o $(NAME) 
 
-create-todo-api:
-		@dotnet new web -o TodoApi --no-https
+create-new-console:
+		@dotnet new console -o $(NAME)
