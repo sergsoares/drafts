@@ -12,6 +12,8 @@ https://learn.microsoft.com/en-us/aspnet/core/tutorials/min-web-api?view=aspnetc
 
 https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/how-to?pivots=dotnet-8-0
 
+https://blog.jetbrains.com/dotnet/2023/04/25/introduction-to-asp-net-core-minimal-apis/
+
 # Dotnet
 
 dotnet new console -o <NAME>
