@@ -7,7 +7,12 @@ import (
 	"strings"
 )
 
-func main()  {
+func main() {
+	// directWithLib()
+	useInterface()
+}
+
+func directWithLib() {
 	fmt.Println("Wrapper to OS")
 
 	cmd := exec.Command("")
@@ -22,15 +27,23 @@ func main()  {
 
 	fmt.Printf("STDERR: %q\n", stderr.String())
 	fmt.Printf("STDOUT: %q\n", out.String())
-	
+
+}
+
+func useInterface() {
+	var x := BaseShell()
+	sh.Exec()
 }
 
 type Shell interface {
-	Exec() stderr, error
+	Exec() string
 }
 
+type BaseShell string
 
-
+func (s BaseShell) Exec() string {
+	return ""
+}
 
 // func (p *provider) ListNodes(cluster string) ([]nodes.Node, error) {
 // 	cmd := exec.Command("docker",
