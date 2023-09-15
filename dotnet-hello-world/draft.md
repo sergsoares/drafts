@@ -41,3 +41,5 @@ stackoverflow.com
 
 PATH
 /
+
+dotnet new webapi --no-https -o WebApi

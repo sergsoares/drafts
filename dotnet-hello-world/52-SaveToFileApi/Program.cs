@@ -6,7 +6,7 @@ app.MapGet("/", () => {
   using (System.IO.StreamWriter outfile = new System.IO.StreamWriter("yourFile.txt")) {
     outfile.Write(outline);
   }
-  Results.Ok("OK");
+  Results.Json("OK");
 });
 
 app.Run();
