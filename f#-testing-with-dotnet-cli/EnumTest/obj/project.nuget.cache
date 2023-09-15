@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "tmBwZ7pTjTnsYs58DCzzZ10S1UhnxsTAxpMlXp7QzJY6XgwVPd27ZLjJW/+Y9oARX2D90WSFF5DenXRpfV1D4w==",
+  "success": true,
+  "projectFilePath": "/Users/sergsoares-personal/drafts/f#-testing-with-dotnet-cli/EnumTest/EnumTest.fsproj",
+  "expectedPackageFiles": [
+    "/Users/sergsoares-personal/.nuget/packages/fsharp.core/6.0.7/fsharp.core.6.0.7.nupkg.sha512",
+    "/Users/sergsoares-personal/.nuget/packages/fsharp.systemtextjson/1.2.42/fsharp.systemtextjson.1.2.42.nupkg.sha512",
+    "/Users/sergsoares-personal/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/sergsoares-personal/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
+    "/Users/sergsoares-personal/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
