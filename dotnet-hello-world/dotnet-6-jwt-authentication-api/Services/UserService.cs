@@ -23,10 +23,10 @@ public class UserService : IUserService
     {
         new User { 
             Id = 1, 
-            FirstName = "Test", 
-            LastName = "User", 
-            Username = "test", 
-            Password = "test" 
+            FirstName = "Thales", 
+            LastName = "Liscano", 
+            Username = "thales", 
+            Password = "thalesthales" 
         }
     };
 
