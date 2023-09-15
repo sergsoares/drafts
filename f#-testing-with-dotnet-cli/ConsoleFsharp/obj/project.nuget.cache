@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rZeVJtVFq8vGRp0601dkH+ZSJxILnOCh4wIK3lxksywoUBYPg9q2G6zUWbyyXXcjSfKfFguM7ZQdHb7SDspmIg==",
+  "success": true,
+  "projectFilePath": "/Users/sergsoares-personal/drafts/f#-testing-with-dotnet-cli/ConsoleFsharp/ConsoleFsharp.fsproj",
+  "expectedPackageFiles": [
+    "/Users/sergsoares-personal/.nuget/packages/fsharp.core/6.0.7/fsharp.core.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
