@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using MvcApi.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace MvcApi.Controllers;
 
@@ -13,9 +14,9 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IResult Index()
     {
-        return View();
+        return Results.Ok();
     }
 
     public IActionResult Privacy()

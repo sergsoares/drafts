@@ -27,7 +27,29 @@ public class UserService : IUserService
             LastName = "Liscano", 
             Username = "thales", 
             Password = "thalesthales" 
+        },
+        new User { 
+            Id = 2, 
+            FirstName = "Pedro", 
+            LastName = "Paulo", 
+            Username = "pedro", 
+            Password = "pedropedro" 
+        },
+        new User { 
+            Id = 3, 
+            FirstName = "Carlos", 
+            LastName = "Antonio", 
+            Username = "carlos", 
+            Password = "carloscarlos" 
+        },
+        new User { 
+            Id = 4, 
+            FirstName = "Joana", 
+            LastName = "Tereza", 
+            Username = "joana", 
+            Password = "joana" 
         }
+
     };
 
     private readonly AppSettings _appSettings;
