@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/sergsoares/lab-kind-with-managed-argocd.git
+    repoURL: https://github.com/sergsoares/drafts.git
     targetRevision: HEAD
-    path: applications/app-generator
+    path: root
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
