@@ -6,7 +6,7 @@ help:
 
 # List directories with folder names
 ls:
-	ls -d -t */ | fzf --preview-window=up --preview 'stat -f "%Sm %N" {}*' | 
+	ls -d -t */ | fzf --preview-window=up --preview 'stat -f "%Sm %N" {}*' 
 	
 # Create a new project (formatting spaces to hifen)
 create:
