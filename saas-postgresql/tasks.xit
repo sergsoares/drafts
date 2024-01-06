@@ -1,0 +1,10 @@
+# Saas App
+
+[x] Create base template with templ
+[x] Configure picocss
+[x] Configure htmx to work
+[x] Create homepage with links to list and create db
+[x] List database workflow with mock
+[ ] Define engine that will be used for create databases
+    > docker, qemu, musl, k8s
+[ ] Create database workflow

@@ -1,0 +1,14 @@
+package main
+
+templ ListPage(dbs []Database) {
+	@Page("picodb") {
+    <h1>List Databases</h1>
+
+		<div>
+			for _, db := range dbs {
+				<li> {db.name} </li>
+			}
+		</div>
+		
+	}
+}
