@@ -11,19 +11,12 @@ terraform {
   }
 }
 
-locals {
-  host = "mytest.ourlab.cc"
-  user = "root"
-  port = 22
-  ssh_key_file = "./key"
-}
-
 provider "system" {
   ssh {
     host        = local.host
     port        = local.port
     user        = local.user
-    private_key = file(ssh_key_file)
+    private_key = file(local.ssh_key_file)
   }
 }
 
@@ -65,7 +58,7 @@ resource "system_service_systemd" "vscode" {
 }
 
 resource "remote_file" "caddyfile" {
-  depends_on = [ system_packages_apt.caddy ]
+  depends_on = [ system_packages_apt.packages]
   conn {
     host        = local.host
     port        = 22
@@ -78,7 +71,7 @@ resource "remote_file" "caddyfile" {
 }
 
 resource "system_service_systemd" "caddy" {
-  depends_on = [ system_packages_apt.caddy, remote_file.caddyfile]
+  depends_on = [ system_packages_apt.packages, remote_file.caddyfile]
   name    = "caddy"
   enabled = true
   status = "started"
